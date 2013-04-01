@@ -6,6 +6,7 @@
  * @Version : 0.0
  * @Description : Base file to handel all request
  */
+	/// -- ERROR REPORTING ON --
 	error_reporting(1);
 	//@ini_set(‘display_errors’, 0);
 	/// -- Get Output in Buffer --
