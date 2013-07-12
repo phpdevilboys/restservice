@@ -1,5 +1,0 @@
-RewriteEngine on
-#RewriteBase /rest_api/restImplementaion/first/
-RewriteBase /RestImplementaion/
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)/(.*)$ index.php?action=$1&actionMethod=$2
