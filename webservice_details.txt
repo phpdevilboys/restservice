@@ -1,0 +1,25 @@
+SETP - I
+deploy services folder in your project directory. make correction in .htaccess as per your folder structure.
+directory structure is
+	-	Core (contains all code, commom, baise libraries)
+	-	Logs (log for this webservice)
+	-	Models (you need to create models for every function which you want to call as web-service)
+	-	index.php
+	-	test.html (this is test file to check for get and post request).
+
+STEP - II
+URL to call service is	
+	TEST page: run test.html to test get and post request
+	GET: http://<hostname>/services/users/GetUser/?name=anoop&age=12&addr=120%20industru%20house
+	POST http://<hostname>/services/users/GetUser/
+	- where users is Model Name
+	- GetUser is function Name which you have defined as function in this model.
+	- Model each function supports 2 method GET and POST, you need to place check for this.
+I have please one demo model as user in model folder. Just to show how this service works.
+
+
+SETP - III
+all configuration are done in /core/config.php. this is final class to call this you have certain set of function as mentioned below:
+	a) $conf = config::getInst(); this will provide you config object.
+	b) $conf->getKeyValue("SQL_HOST_NAME"); this will provide you specific key value of config file.
+	c) $conf->getSettings(); this will provide all key values as array.

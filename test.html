@@ -1,0 +1,30 @@
+<html>
+<body>
+<H1>POST Method Test</H1>	
+<p>action: http://localhost/services/users/GetUser/</p>
+<p>method: POST</p>
+<form action="http://localhost/services/index.php/users/GetUser" method="POST">
+	<input type="hidden" name="name" value="Ð×ÝÞðýþ" />
+	<input type="hidden" name="age" value="42" />
+	<input type="hidden" name="address" value="KalindiKunj Regency bicholi mardana, Indore" />
+	<input type="hidden" name="action" value="users" />
+	<input type="hidden" name="actionMethod" value="GetUser" />
+	
+	<input type="submit" name="go" id="go" value="go">
+</form>
+
+<br>
+<H1>GET Method Test</H1>
+<p>action: http://192.168.0.226/services/users/GetUser/</p>
+<p>method: GET</p>	
+<form action="http://localhost/services/index.php/users/GetUser/" method="GET">
+	<input type="hidden" name="name" value="Ð×ÝÞðýþ" />
+	<input type="hidden" name="age" value="12" />
+	<input type="hidden" name="addr" value="120 industry house ab road indore hahah" />
+	<input type="hidden" name="action" value="users" />
+	<input type="hidden" name="actionMethod" value="GetUser" />
+	<input type="submit" name="go1" id="go1" value="go">
+</form>
+
+</body>
+</html>
